@@ -1,5 +1,5 @@
 # microcontroller-adventures
-ESP32 + micropython + raspberry pi
+ESP32 + micropython + raspberry pi + servo
 
 # Installing picocom
 sudo apt-get install picocom
