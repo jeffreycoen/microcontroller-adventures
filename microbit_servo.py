@@ -1,5 +1,4 @@
-# Artronix Jam - War of the Worlds: Rise of the micro:bits Script 1
-# Rotates the servo depending on the microbit's rotation through the x axis.
+# Inspired by: Artronix Jam - War of the Worlds: Rise of the micro:bits Script 1
 # Tested with SG90 servo @ 3.3v
 # Copy and paste this into the compiler at http://python.microbit.org/editor.html
 
@@ -43,16 +42,22 @@ class Servo:
         us = self.min_us + total_range * degrees // self.angle
         self.write_us(us)
 
-
-
+# loop to check accelerometer position then move servos
 while True:
-
+          
     # rescale accelerometer x axis to between 0 and 180
-    # rescaled_angle = rescale((-1024, 1024), (0, 180), accelerometer.get_x())
     rescaled_angle = ((accelerometer.get_x() /12)+90)
-    print(rescaled_angle)
+
+    # pan servo to the rescaled angle
     Servo(pin0).write_angle(rescaled_angle) # write rescaled angle
-    print(rescaled_angle)
-    sleep(200)
+    
+    # rescale accelerometer y axis to between 0 and 180
+    rescaled_angle_y = ((accelerometer.get_y() /12)+90)
+
+    # tilt servo to rescaled angle
+    Servo(pin1).write_angle(rescaled_angle_y) # write rescaled angle
+
+    # provide 0.1 sec pause
+    sleep(100)
     
    
