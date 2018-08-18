@@ -1,15 +1,8 @@
 # microcontroller-adventures
-ESP32 + micropython + raspberry pi + servo
+micro:bit + micropython + raspberry pi + servos
 
-# Installing picocom
-sudo apt-get install picocom
+servos are controlled through micro:bit accelerometer
 
-# Connecting with REPL to ESP32
-picocom -b 115200 /dev/ttyUSB0
+pan/tilt servos link: https://www.amazon.com/gp/product/B0775R6JFF/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1
 
-# Controlling a servo
-import machine
-servo = machine.PWM(machine.Pin(15), freq=60)
-servo.duty(40)
-servo.duty(115)
-servo.duty(77)
+bbc microbit amazon link: https://www.amazon.com/gp/product/B01G8WUGWU/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1
