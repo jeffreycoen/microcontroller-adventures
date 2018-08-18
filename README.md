@@ -1,6 +1,7 @@
 # microcontroller-adventures
 ![micropython](https://en.wikipedia.org/wiki/File:Micropython-logo.svg)
-micro:bit + micropython + raspberry pi + servos
+
+**micro:bit + micropython + raspberry pi + servos**
 
 servos are controlled through micro:bit accelerometer
 
