@@ -10,3 +10,5 @@ pan/tilt servos link: https://www.amazon.com/gp/product/B0775R6JFF/ref=oh_aui_de
 bbc microbit amazon link: https://www.amazon.com/gp/product/B01G8WUGWU/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1
 
 ![...](https://www.adafruit.com/includes/templates/adafruit2013/images/micropython/snek.png)
+
+![Screenshot](https://raw.githubusercontent.com/jeffreycoen/cpx_robot/master/IMG_0719.jpg "fishing")
